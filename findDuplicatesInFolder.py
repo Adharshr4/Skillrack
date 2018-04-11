@@ -1,4 +1,4 @@
-/*find duplicates in folder.The directory structure of file system is given in n lines.Each line contain parent and child file .
+'''find duplicates in folder.The directory structure of file system is given in n lines.Each line contain parent and child file .
 If a folder has 2 file with same name then print it if no duplicates found print "-1" and the names should be in ascending order..
 Input:
 5
@@ -23,7 +23,7 @@ src.style.css
 
 Output:
 sheet.xls
-style.css    */
+style.css    '''
 
 
 n,l,ans=int(input()),[],[]
