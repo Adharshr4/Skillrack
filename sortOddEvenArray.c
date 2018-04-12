@@ -17,37 +17,28 @@ Output:
 #include<stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+int main()  {
     int n,i;
     scanf("%d",&n);
     int a[n];
-    for(i=0;i<n;i++)
-    {
+    for(i=0;i<n;i++)  {
         scanf("%d",&a[i]);
     }
-    if(n%2==0)
-    {
+    if(n%2==0)  {
         sort(a,1,n);
     }
-    else
-    {
+    else  {
         sort(a,0,n);
     }
-    for(i=0;i<n;i++)
-    {
+    for(i=0;i<n;i++)  {
         printf("%d ",a[i]);
     }
 }
-void sort(int arr[],int start,int len)
-{
+void sort(int arr[],int start,int len)  {
     int i,j,t;
-    for(i=start;i<len;i=i+2)
-    {
-        for(j=i+2;j<len;j=j+2)
-        {
-            if(arr[i]>arr[j])
-            {
+    for(i=start;i<len;i=i+2)  {
+        for(j=i+2;j<len;j=j+2)  {
+            if(arr[i]>arr[j])  {
                 t=arr[i];
                 arr[i]=arr[j];
                 arr[j]=t;
