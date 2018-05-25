@@ -18,7 +18,7 @@ public class Hello {
 		for(i=0;i<str2.length();i++){
 		    while(str1.indexOf(String.valueOf(str2.charAt(i))) != -1){
 		        ind = str1.indexOf(String.valueOf(str2.charAt(i)));
-		        str1.delete(ind,ind+1);
+		        str1.delete(ind,ind+1);   //string.delete(start , end)   //so strat is inclusive and end in exclusive
 		    }
 		}
 		System.out.println(str1);
