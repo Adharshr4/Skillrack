@@ -31,7 +31,7 @@ public class Hello {
 		sc.nextLine();
 		char[][] arr = new char[n+1][n+1];
 		for(i=0;i<n;i++){
-		    String str = sc.nextLine().trim();
+		    String str = sc.next().trim();
 		    for(j=0;j<n;j++){
 		        arr[i][j] = str.charAt(j);
 		    }
