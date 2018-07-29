@@ -86,13 +86,15 @@ public class Hello {
 		else if(val == 2){
 		    first = str[2];  second = str[0];  third = str[1];
 		}
+	    	flag = 0;
 		for(int i=0;i<first.length();i++){
 		    for(int j=0;j<second.length();j++){
 		        if(j == 0){
-		            if(first.charAt(i) == second.charAt(0)){
+		            if(first.charAt(i) == second.charAt(0) && flag ==0){  //if one char is matched again it should not print the second word
 		                for(int k=0;k<second.length();k++){
 		                    System.out.print(second.charAt(k));
 		                }
+				flag = 1;    
 		                j = second.length();
 		            }
 		            else{
