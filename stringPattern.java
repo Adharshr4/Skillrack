@@ -1,4 +1,4 @@
-//print as the format given below by accepting three strings
+/*print as the format given below by accepting three strings
 
 BRIDGE DRAGON TRANCE 
 Output:
